@@ -6,10 +6,10 @@ var hash = {
     create: function(algorithm) {
         return crypto.createHash(algorithm);
     },
-    calculate: function(hashes, file, splitSize, callback) {
+    calculate: function(hashes, blob, splitSize, callback) {
         var offset = 0,
-            totalSize = file.size,
-            part = file.slice(0, (totalSize > splitSize) ? splitSize : totalSize);
+            totalSize = blob.size,
+            part = blob.slice(0, (totalSize > splitSize) ? splitSize : totalSize);
 
         calculatePart(part);
         function calculatePart(part) {
@@ -27,9 +27,9 @@ var hash = {
                 var nextPart;
                 var remaining = totalSize - offset;
                 if (remaining > splitSize) {
-                    nextPart = file.slice(offset, offset + splitSize);
+                    nextPart = blob.slice(offset, offset + splitSize);
                 } else {
-                    nextPart = file.slice(offset, offset + remaining);
+                    nextPart = blob.slice(offset, offset + remaining);
                 }
                 calculatePart(nextPart);
             };
