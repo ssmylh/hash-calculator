@@ -48,6 +48,7 @@ mask.on('drop', function(evt){
         hash.calculate(
             hashes,
             file,
+            1 * 1024 * 1024,
             (results) => showResults(file.name, file.size, checked.map((e, i) => [e, results[i]]))
         );
     });
