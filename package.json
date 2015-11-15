@@ -9,7 +9,8 @@
   },
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "test": "electron-mocha --reporter tap --renderer ./test"
   },
   "keywords": ["Electron"],
   "license": "MIT",
