@@ -1,0 +1,17 @@
+html,body{
+    height:100%;
+}
+#overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #CCFF99;
+    opacity: 0.3;
+    display: none;
+}
+p.instruction{
+    text-align: center;
+    font-size: 30px;
+}

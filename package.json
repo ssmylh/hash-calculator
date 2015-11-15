@@ -1,0 +1,19 @@
+{
+  "name": "hash-calculator",
+  "description": "Calculating hash Electron applictaion.",
+  "version": "1.0.0",
+  "author": "ssmylh",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ssmylh/hash-calculator.git"
+  },
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": ["Electron"],
+  "license": "MIT",
+  "devDependencies": {
+    "electron-prebuilt": "^0.34.0"
+  }
+}

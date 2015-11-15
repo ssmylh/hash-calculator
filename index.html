@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Hash Calculator</title>
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/skeleton/normalize.css">
+        <link rel="stylesheet" href="css/skeleton/skeleton.css">
+    </head>
+    <body>
+        <div id="overlay"></div>
+        <p class="instruction">Drop files here !</p>
+        <div class="container">
+            <div class="row">
+                <div class="three columns">
+                    <label for="sha1">
+                        <input id="sha1" type="checkbox" value="sha1" checked>
+                        <span class="label-body">SHA1</span>
+                    </label>
+                </div>
+                <div class="three columns">
+                    <label for="sha256">
+                        <input id="sha256" type="checkbox" value="sha256" checked>
+                        <span class="label-body">SHA256</span>
+                    </label>
+                </div>
+                <div class="three columns">
+                    <label for="sha512">
+                        <input id="sha512" type="checkbox" value="sha512" checked>
+                        <span class="label-body">SHA512</span>
+                    </label>
+                </div>
+                <div class="three columns">
+                    <label for="md5">
+                        <input id="md5" type="checkbox" value="md5" checked>
+                        <span class="label-body">MD5</span>
+                    </label>
+                </div>
+            </div>
+            <div id="results"></div>
+        </div>
+        <script src="application.js"></script>
+    </body>
+</html>
