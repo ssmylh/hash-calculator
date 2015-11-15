@@ -41,7 +41,7 @@ describe('hash', () => {
             );
         });
         it('should calculate from blob whose size is more than split-size', (done) => {
-            var buffer = fs.readFileSync(__dirname + 'test/resources/more-than-4kb.txt');
+            var buffer = fs.readFileSync(__dirname + '/resources/more-than-4kb.txt');
             var blob = new Blob([toArrayBuffer(buffer)]);
             var sha1 = '2d05c8e1f9bbdda383f9f77d43cbbfc6de474587';
             hash.calculate(
