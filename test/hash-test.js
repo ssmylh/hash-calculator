@@ -19,8 +19,8 @@ describe('hash', () => {
                 blob,
                 512,
                 (results) => {
-                    assert(results[0] === sha1);
-                    assert(results[1] === md5);
+                    assert.equal(results[0], sha1);
+                    assert.equal(results[1], md5);
                     done();
                 }
             );
@@ -35,7 +35,7 @@ describe('hash', () => {
                 blob,
                 1024,
                 (results) => {
-                    assert(results[0] === sha1);
+                    assert.equal(results[0], sha1);
                     done();// wait.
                 }
             );
@@ -49,7 +49,7 @@ describe('hash', () => {
                 blob,
                 1024,
                 (results) => {
-                    assert(results[0] === sha1);
+                    assert.equal(results[0], sha1);
                     done();// wait.
                 }
             );
