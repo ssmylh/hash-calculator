@@ -15,6 +15,6 @@
   "keywords": ["Electron"],
   "license": "MIT",
   "devDependencies": {
-    "electron-prebuilt": "^0.34.0"
+    "electron-prebuilt": "^0.35.0"
   }
 }
